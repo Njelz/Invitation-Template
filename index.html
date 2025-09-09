@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Dinner & Sleepover Invite 💌</h1>
+        <p><b>To:</b> My Love ❤️</p>
+        <p><b>From:</b> Me (your personal chef)</p>
+        <p><b>Date:</b> Saturday, September 12</p>
+        <p><b>Time:</b> 7:00 pm</p>
+        <p><b>Location:</b> My place🍷</p>
+
+        <h2>Menu 🍽️</h2>
+        <ul>
+            <li> IT WILL BE A SURPRISE 🤭🤭🤭 </li>
+        </ul>
+
+        <h2>Plan📝</h2>
+        <ol>
+            <li>Dinner🍽️</li>
+            <li>Movie night🎞️</li>
+            <li>Cuddles🫂</li>
+            <li>Sleepover✨</li>
+        </ol>
+
+        <button id="RSVPbtn"> RSVP here😁</button>
+        <p class="footer">RSVP so I can light the candles🕯️🕯️🕯️</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        document.getElementById("RSVPbtn").addEventListener("click", () => {
+            confetti({
+                particleCount: 200,
+                spread: 100,
+                origin: { y: 0.6 }
+            });
+        });
+    </script>
+</body>
+</html>
